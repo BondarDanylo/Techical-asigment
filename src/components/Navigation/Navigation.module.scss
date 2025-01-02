@@ -1,0 +1,39 @@
+@import '../../variables/variables.scss';
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & a {
+        width: 150px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu a {
+        width: 100px !important;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .footer {
+        position: unset;
+        transform: translate(0%,0%);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        & li {
+            margin-bottom: 10px;
+        }
+    }
+}

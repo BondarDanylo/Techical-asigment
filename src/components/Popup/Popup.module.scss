@@ -1,0 +1,23 @@
+@import '../../variables/variables.scss';
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.411);
+    z-index: 10;
+    padding: 30px;
+}
+
+.popup {
+    background-color: $yellow_color;
+    padding: 20px;
+    border-radius: $small_border_radius;
+    min-width: 300px;
+}
